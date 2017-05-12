@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	/*width: 960px;*/
+}
+
+h1 {
+	color: blue;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 50px 50px 10px 50px;
+	text-align: center;
+}
+
+.container {
+	clear: both;
+	float: left;
+	background: lightgray;
+	width: 900px;
+	margin: 40px;
+}
+
+.img {
+	opacity: 0.3;
+	width: 100%;
+}
+.guess {
+	float: left;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.wins {
+	float: left;
+	padding: 40px;
+	text-align: left;
+	width: 100%;
+}
+
+.losses {
+	float: left;
+	padding: 40px;
+	text-align: left;
+	width: 100%;
+}
+
+.guessLeft {
+	float: left;
+	padding: 40px;
+	text-align: left;
+	width: 100%;
+}
+
+.guessesMade {
+	float: left;
+	padding: 40px;
+	text-align: left;
+	width: 100%;
+}
