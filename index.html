@@ -5,39 +5,21 @@
 	  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>The Psychic Game</title>
+
 </head>
 <body>
-	<div class="container">
-		<h1>The Psychic Game</h1>
-		<div class="guess">
-			Guess what letter I'm thinking of
-		</div>
-<!-- 	<div class="container"> -->
-
-		<div class="wins">
-			Wins:
-		</div>
-		<div class="losses">
-			Losses:
-		</div>
-		<div class="guessLeft">
-			Guesses Left:
-		</div>
-		<div class="guessesMade">
-			Your Guesses so far:
-		</div>
-		<img class="img" src="assets/images/psychic-crystal.jpeg" alt="psychic">
+	<div id="container">
+	<h1>The Psychic Game</h1>
+	    <div id="game">
+	    	<p>Guess what letter I'm thinking of</p>
+	    </div>
+		<p>Number of Wins: <span id="wins"</span></p>
+		<p>Number of Losses: <span id="losses"</span></p>
+		<p>Number of Guesses Left: <span id="guessesLeft"</span></p>
+		<p>Letters Guessed: <span id="userGuess"</span></p>
 	</div>
 
-
-
-	
-
-
-
-
-
-
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>

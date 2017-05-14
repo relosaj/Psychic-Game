@@ -7,6 +7,13 @@ body {
 	/*width: 960px;*/
 }
 
+#container {
+	clear: both;
+	float: left;
+	background: lightgray;
+	width: 100%;
+}
+
 h1 {
 	color: blue;
 	font-size: 24px;
@@ -14,51 +21,47 @@ h1 {
 	padding: 50px 50px 10px 50px;
 	text-align: center;
 }
-
-.container {
-	clear: both;
-	float: left;
-	background: lightgray;
-	width: 900px;
-	margin: 40px;
-}
-
 .img {
 	opacity: 0.3;
 	width: 100%;
 }
-.guess {
-	float: left;
+
+#game {
+/*	float: left;*/
 	font-size: 20px;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 	width: 100%;
 }
 
-.wins {
+#wins {
 	float: left;
-	padding: 40px;
+	padding: 20px;
 	text-align: left;
 	width: 100%;
+	margin-left: 20px;
 }
 
-.losses {
+#losses {
 	float: left;
-	padding: 40px;
+	padding: 20px;
 	text-align: left;
 	width: 100%;
+	margin-left: 20px;
 }
 
-.guessLeft {
+#guessesLeft {
 	float: left;
-	padding: 40px;
+	padding: 20px;
 	text-align: left;
 	width: 100%;
+	margin-left: 20px;
 }
 
-.guessesMade {
+#userGuess {
 	float: left;
-	padding: 40px;
+	padding: 20px;
 	text-align: left;
 	width: 100%;
+	margin-left: 20px;
 }

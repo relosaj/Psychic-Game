@@ -1,26 +1,56 @@
 
 
-var wins = 0
-var losses =0
 
-var guessesLeft = 9
-
-var guessesMade=0
-
-var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var wins = 0;
+var losses = 0;
+var guessesLeft = 9;
 
 
-// computer's pick
+var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+var computersPick = letters[Math.floor(Math.random() * letters.length)];
+	console.log(computersPick);
+
+// function (mystic) {
+// 	var newHiddenLetter = letters[Math.floor(Math.random() * letters.length)];
+// }
+
+document.onkeyup = function(event) {
+	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+	console.log("Key press: " + userGuess);
+
+	if (userGuess === computersPick) {
+		wins++;
+		console.log ("You've won");
+		console.log ("You've won: " + wins + " games!")
+		guessesLeft = 9;
+	} 
+	if (userGuess != computersPick) {
+		guessesLeft--;
+		console.log("Try again. You have: " + guessesLeft + " guesses left!");
+	}
+		
+	if (guessesLeft === 0) {
+		losses++;
+		console.log ("You've lost")
+		console.log ("Games Lost: " + losses + " games");	
+		guessesLeft = 9;
+	} 
+
+	document.getElementById("wins").innerHTML = wins;
+	document.getElementById("losses").innerHTML = losses;
+	document.getElementById("guessesLeft").innerHTML = guessesLeft;
+	document.getElementById("userGuess").innerHTML += userGuess;
+
+}
 
 
 
-// user's pick
 
 
-// win condition
 
 
-// subtract number of guesses
 
 
-// user's guesses so far
+
+
