@@ -24,6 +24,7 @@ document.onkeyup = function(event) {
 		console.log ("You've won");
 		console.log ("You've won: " + wins + " games!")
 		guessesLeft = 9;
+		document.getElementById("userGuess").innerHTML = "";
 	} 
 	if (userGuess != computersPick) {
 		guessesLeft--;
@@ -35,6 +36,7 @@ document.onkeyup = function(event) {
 		console.log ("You've lost")
 		console.log ("Games Lost: " + losses + " games");	
 		guessesLeft = 9;
+		document.getElementById("userGuess").innerHTML = "";
 	} 
 
 	document.getElementById("wins").innerHTML = wins;
@@ -46,7 +48,7 @@ document.onkeyup = function(event) {
 
 
 
-
+// document.getElementById("demo").innerHTML = "Paragraph changed!";
 
 
 
